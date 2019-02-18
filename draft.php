@@ -55,7 +55,7 @@ die('There was an error running the query [' . $conn->error . ']');
 
     <title>Hello, world!</title>
     <style type="text/css">
-
+    
 
         body {
         	width: 100wh;
@@ -67,7 +67,7 @@ die('There was an error running the query [' . $conn->error . ']');
         	background-size: 400% 400%;
         	-webkit-animation: Gradient 15s ease infinite;
         	-moz-animation: Gradient 15s ease infinite;
-        	animation: Gradient 17s ease infinite;
+        	animation: Gradient 17s ease infinite; 
         }
         .form-element .ng-invalid{
           color: red !important;
@@ -249,7 +249,7 @@ die('There was an error running the query [' . $conn->error . ']');
             <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" name='people' ng-model=reg.user.people placeholder="Number of people" type="input" required minlength="1" ng-maxlength="2000">
             <div class="form-element-bar" ng-hide="(regForm.people.$dirty && regForm.people.$viewValue!=='')"></div>
             <span class="position-absolute" ng-if="((regForm.people.$error.minlength || regForm.people.$error.required) && regForm.people.$touched)">
-              Warning! Min 1 person.
+              minimum 1 person should be there
               </span>
               <span class="position-absolute" ng-if="(regForm.people.$error.maxlength && regForm.people.$touched)">
 
@@ -266,7 +266,7 @@ die('There was an error running the query [' . $conn->error . ']');
 
               </span>
               <span class="position-absolute" ng-if="(regForm.budgetfrom.$error.maxlength && regForm.budgetfrom.$touched)">
-
+                username must not be more than 10 characters
                 </span>
             <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Budget From:</label>
         </div>
@@ -338,10 +338,10 @@ die('There was an error running the query [' . $conn->error . ']');
             <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" name='username' ng-model=reg.user.username placeholder="Name" type="input" required minlength="4" ng-maxlength="10">
             <div class="form-element-bar" ng-hide="(regForm.username.$dirty && regForm.username.$viewValue!=='')"></div>
             <span class="position-absolute" ng-if="((regForm.username.$error.minlength || regForm.username.$error.required) && regForm.username.$touched)">
-            Warning! username must be atleast 4 characters long
+              username must be atleast 4 characters long
               </span>
               <span class="position-absolute" ng-if="(regForm.username.$error.maxlength && regForm.username.$touched)">
-              Warning ! username must not be more than 10 characters
+                username must not be more than 10 characters
                 </span>
             <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Name</label>
         </div>
@@ -351,10 +351,10 @@ die('There was an error running the query [' . $conn->error . ']');
             <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" name='city' ng-model=reg.user.city placeholder="Please fill your city name" type="input" required minlength="2" ng-maxlength="50">
             <div class="form-element-bar" ng-hide="(regForm.city.$dirty && regForm.city.$viewValue!=='')"></div>
             <span class="position-absolute" ng-if="((regForm.city.$error.minlength || regForm.city.$error.required) && regForm.city.$touched)">
-              Warning ! Min 2 characters
+              cityname must be atleast 2 characters long
               </span>
               <span class="position-absolute" ng-if="(regForm.city.$error.maxlength && regForm.city.$touched)">
-              Warning ! Max 50 characters
+                cityname must not be more than 50 characters
                 </span>
             <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">city</label>
         </div>
@@ -365,7 +365,7 @@ die('There was an error running the query [' . $conn->error . ']');
             <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" name='number' ng-model=reg.user.number pattern="(\d{3})-(\d{3})-(\d{4})" placeholder="Please fill your contact number as ###-###-##### " type="input" required minlength="10" ng-maxlength="12">
             <div class="form-element-bar" ng-hide="(regForm.number.$dirty && regForm.number.$viewValue!=='')"></div>
             <span class="position-absolute" ng-if="((regForm.number.$error.minlength || regForm.number.$error.required) && regForm.number.$touched)">
-              Warning!Max 10 characters
+              Contact should be of 10 characters
               </span>
               <span class="position-absolute" ng-if="(regForm.number.$error.maxlength && regForm.number.$touched)">
                 IT should be valid
@@ -378,10 +378,10 @@ die('There was an error running the query [' . $conn->error . ']');
             <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" name='email' ng-model=reg.user.email placeholder="E-mail AS demo@gmail.com" type="e-mail" required minlength="9" ng-maxlength="40">
             <div class="form-element-bar" ng-hide="(regForm.email.$dirty && regForm.email.$viewValue!=='')"></div>
             <span class="position-absolute" ng-if="((regForm.email.$error.minlength || regForm.email.$error.required) && regForm.email.$touched)">
-              Warning! enter valid email
+              enter valid email
               </span>
               <span class="position-absolute" ng-if="(regForm.email.$error.maxlength && regForm.email.$touched)">
-              Warning!  enter valid email
+                enter valid email
                 </span>
             <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">E-mail</label>
         </div>
@@ -394,7 +394,7 @@ die('There was an error running the query [' . $conn->error . ']');
             <input id="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9" class="form-element-field" name='address' ng-model=reg.user.address placeholder="Personal" type="input" required minlength="40" >
             <div class="form-element-bar" ng-hide="(regForm.address.$dirty && regForm.address.$viewValue!=='')"></div>
             <span class="position-absolute" ng-if="((regForm.address.$error.minlength || regForm.address.$error.required) && regForm.address.$touched)">
-              Warning! It should have minimum 40 characters.
+              Warning! It shoul have minimum 40 characters
               </span>
 
             <label class="form-element-label" for="field-omv6eo-metm0n-5j55wv-w3wbws-6nm2b9">Personal/Organisatiional Address</label>

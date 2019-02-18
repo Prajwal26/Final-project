@@ -163,31 +163,27 @@
                 <nav class="navbar-sidebar">
                     <ul class="list-unstyled navbar__list">
                         <li class="has-sub">
-                            <a class="js-arrow" href="#">
+                            <a class="js-arrow" href="dashboard.php">
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
-                            <ul class="list-unstyled navbar__sub-list js-sub-list">
-                                <li>
-                                    <a href="index.html">Dashboard 1</a>
-                                </li>
-                                    </ul>
+
                         </li>
                         <li>
-                            <a href="chart.html">
-                                <i class="fas fa-chart-bar"></i>Charts</a>
+                            <a href="persontable.php">
+                                <i class="fas fa-chart-bar"></i>Person Details</a>
                         </li>
-                        <li class="active">
+                        <li class="">
+                            <a href="event.php">
+                                <i class="fas fa-table"></i>Event Details</a>
+                        </li>
+                        <li class="data_table.php">
                             <a href="table.html">
-                                <i class="fas fa-table"></i>Tables</a>
+                                <i class="fas fa-table"></i>Joint Table/</a>
                         </li>
-                        <li class="active">
-                            <a href="table.html">
-                                <i class="fas fa-table"></i>Tables</a>
+                        <li class="">
+                            <a href="newpanel.php">
+                                <i class="fas fa-table"></i>Analysis Table</a>
                         </li>
-                        <li class="active">
-                            <a href="table.html">
-                                <i class="fas fa-table"></i>Tables</a>
-                        </li>
-                        <li class="active">
+                        <li class="">
                             <a href="table.html">
                                 <i class="fas fa-table"></i>Tables</a>
                         </li>

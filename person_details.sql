@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 03, 2019 at 05:54 PM
+-- Generation Time: Feb 12, 2019 at 07:03 PM
 -- Server version: 5.7.11
 -- PHP Version: 5.6.19
 
@@ -27,24 +27,23 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `person_details` (
-  `personid` int(11) NOT NULL,
   `name` varchar(50) DEFAULT NULL,
   `city` varchar(20) DEFAULT NULL,
-  `contact` bigint(15) DEFAULT NULL,
+  `contact` int(10) DEFAULT NULL,
   `email` varchar(50) DEFAULT NULL,
-  `address` varchar(200) DEFAULT NULL
+  `address` varchar(200) DEFAULT NULL,
+  `personid` int(11) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `person_details`
 --
 
-INSERT INTO `person_details` (`personid`, `name`, `city`, `contact`, `email`, `address`) VALUES
-(5, 'prajwal', 'indore', 898989898, 'elonapnabachchahe@gmail.com', 'Tesla Head office'),
-(55, 'Nihal', 'indore', 9039553219, 'Nihal@gmail.com', 'tere baap se puch'),
-(89, 'Nehal', 'indore', 99999, 'Janwar@gmail.com', 'tere baap se puch'),
-(805, 'prajwal', 'indore', 898989898, 'elonapnabachchahe@gmail.com', 'Tesla Head office'),
-(1005, 'Nono', 'Nini', 99, 'Nihal@nihal.com', 'naksljf dajsk jaskljf lkajflk jaskjfk aslfjl aksf');
+INSERT INTO `person_details` (`name`, `city`, `contact`, `email`, `address`, `personid`) VALUES
+('ramesh', 'agra', 456666346, 'hh@gmail.com', 'india nagar', 1001),
+('suresh', 'indore', 45865428, 'pk@gmail.com', 'rajendra nagar', 1002),
+('stuffendra', 'indore', 45583456, 'hdgc@gmail.com', 'tilak nagar', 1003),
+('dobendra', 'pakistan', 45668855, 'dob@gmail.com', 'chota pakistan', 1004);
 
 --
 -- Indexes for dumped tables
@@ -56,15 +55,6 @@ INSERT INTO `person_details` (`personid`, `name`, `city`, `contact`, `email`, `a
 ALTER TABLE `person_details`
   ADD PRIMARY KEY (`personid`);
 
---
--- AUTO_INCREMENT for dumped tables
---
-
---
--- AUTO_INCREMENT for table `person_details`
---
-ALTER TABLE `person_details`
-  MODIFY `personid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1010;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

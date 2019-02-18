@@ -4,175 +4,221 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link rel="stylesheet" href="css/aos.css">
     <!-- Bootstrap CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/event.css">
+    <link rel="stylesheet" href="css/screen.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"      rel="stylesheet">
 
-    <title>form</title>
 
+    <title>Draw My Event</title>
 
+    <style media="screen">
+      .jumbotron .container{
+        padding: 21px;
+        background: #0000009e;
+        border-radius: 8px;
+      }
+      #top-nav{
+        font-size: 11px;
+      }
+      #top-nav i{
+        font-size: 15px;
+      }
+      #top-nav .nav-link{
+        border-right:1px solid white;
+      }
+      #top-nav .nav-link:nth-child(1){
+        border-right:4px solid red !important;
+      }
+      .nav-link:hover{
+        background: white;
+        color: black !important;
+      }
+      .nav-link .active{
+        background: white;
+        color: black !important;
+      }
+      .nav-link{
+        margin: 0.5rem 0;
+        padding: .0rem 1rem;
+        transition: background 0.41s,color 0.41s;
+      }
+      .third-nav{
+        font-size: 14px;
+      }
+      .fcredits , .fcredits p , .fcredits a
+      {
+        font-size: 12px;
+        color: #797979;
+      }
+      .fcontent .sitelinks .mt-2{
+            font-size: 10px;
+            list-style: none;
+                padding: 0 24px;
+      }
+      .fcontent span i{
+        padding-right: 5px;
+      }
+      #dostick{
+        background: black;
+      }
+
+    </style>
 
 
   </head>
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <!-- <script src="angular.min.js" charset="utf-8"></script>
+    <script src="angular-ui-router.min.js" charset="utf-8"></script> -->
+
     <div>
-      <nav class="nav px-3 navbar-dark bg-black">
-        <span class="my-auto" style="color:white" >{call} 99559595956 </span>
+      <nav class="nav px-3 navbar-dark bg-black" id="top-nav">
+        <span class="my-auto" style="color:white" ><i class="material-icons align-bottom">phone</i> 7772921481 </span>
         <a class="nav-link active ml-auto" href="#" style="color:white" >About Us</a>
-        <a class="nav-link" href="#" style="color:white" >Contact Us</a>
-        <a class="nav-link" href="#" style="color:white" >Join Us</a>
+        <a class="nav-link" href="contact.html" style="color:white" >Contact Us</a>
+        <a class="nav-link" href="join.html" style="color:white;border-right: 0;" >Join Us</a>
       </nav>
-      <nav class="navbar navbar-expand-lg  navbar-dark bg-black">
-          <a class="navbar-brand" href="#" style="color:white" >Navbar</a>
+    <div id="dostick">
+      <nav class="navbar navbar-expand-md py-2 py-sm-0  navbar-dark bg-black">
+          <a class="navbar-brand" href="index.html" style="color:white" ><img style="width:100%;" src="images/logo.png"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
      <span class="navbar-toggler-icon"></span>
    </button>
 
 
     </nav>
-    <div class="  navbar-expand-lg  ">
+    <div class="  navbar-expand-lg d-flex d-ld-block third-nav">
 
     <div class="collapse navbar-collapse bg-black" id="navbarSupportedContent" >
-    <a class="nav-link active" style="color:white" href="#">Home</a>
+    <a class="nav-link active" style="color:white" href="index.html">Home</a>
     <a class="nav-link" href="#" style="color:white" >Draw Your Event</a>
     <a class="nav-link" href="#" style="color:white" >Featured Event</a>
-    <a class="nav-link" href="#" style="color:white" >Session 'N' Plans </a>
-    <a class="nav-link" href="#" style="color:white" >Testimonial</a>
+    <a class="nav-link" href="#testim" style="color:white" >Testimonial</a>
   </div>
   </div>
+</div>
+<script type="text/javascript">
+window.onscroll = function() {myFunction()};
 
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container">
-      <h1 class="display-4">Draw My Event</h1>
-      <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut .</p>
-      <div class="">
+    // Get the navbar
+    var navbar = document.getElementById("dostick");
+
+    // Get the offset position of the navbar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+    if (window.pageYOffset >= sticky) {
+      navbar.classList.add("fixed-top")
+    } else {
+      navbar.classList.remove("fixed-top");
+    }
+    }
+</script>
+  <div class="subheader" id="subheader-section" style="background-image:url('images/subheader-image.jpg')">
+
+	    <article class="typography">
+	    	<div class="container">
+	    	  <h1 style="text-transform: capitalize;" data-aos="fade-up" data-aos-offset="00" >draw my event</h1>
+              <h4 data-aos="fade-left"  data-aos-delay="300" data-aos-offset="00">Your event is just one click away select your type and get connected to us in a go</h4>
+              <div class="" style="margin-left: 25vw; ">
         <div class="form-group d-block d-md-flex">
           <div class="d-block d-md-flex  py-2 py-md-0">
-          <label for="exampleFormControlSelect2">Category</label>
-          <select  class="form-control mx-0 mx-md-4" id="exampleFormControlSelect2">
-            <option>option 1</option>
-            <option>option 2</option>
-            <option>option 3</option>
-            <option>option 4</option>
-            <option>option 5</option>
+          <label for="exampleFormControlSelect2" style="color: white;" data-aos="fade-up"  data-aos-delay="500" data-aos-offset="00">Category</label>
+          <select data-aos="fade-down"  data-aos-delay="500" data-aos-offset="00" class="form-control mx-0 mx-md-4" id="exampleFormControlSelect2">
+            <option>Personal</option>
+            <option>Corporate</option>
+            <option>Social/Cultuarl</option>
+            <option>Tour Events</option>
+            <option>Others</option>
           </select>
 
         </div>
         <div  class="d-block d-md-flex  py-2 py-md-0">
 
-          <label for="exampleFormControlSelect2">Sub Category</label>
-          <select  class="form-control mx-0 mx-md-4" id="exampleFormControlSelect2">
-            <option>option 1</option>
-            <option>option 2</option>
-            <option>option 3</option>
-            <option>option 4</option>
-            <option>option 5</option>
+          <label for="exampleFormControlSelect2" style="color: white" data-aos="fade-up"  data-aos-delay="500" data-aos-offset="00">SubCategory</label>
+          <select  class="form-control mx-0 mx-md-4" id="exampleFormControlSelect2" data-aos="fade-down"  data-aos-delay="500" data-aos-offset="00">
+            <option>Wedding</option>
+            <option>Anniversary</option>
+            <option>Birthday</option>
+            <option>Jubilee</option>
+            <option>Celebrations</option>
           </select>
 
         </div>
         </div>
 
       </div>
-    </div>
-  </div>
+	    	  <a data-aos="zoom-in"  data-aos-delay="600" data-aos-offset="00" href="" class="btn--primary register-now" onclick="func()">REGISTER NOW<span class="fa fa-long-arrow-right"></span></a>
+	    	</div>
+
+	    </article>
+
+
+
+  	</div>
 
 <div  class="w-100">
 
   <div class="slide  pt-2 pb-4 back-owl">
-<h1 class="py-3 text-white text-center">  Sneak Peek</h1>
-    <div class="owl-carousel owl-theme">
+<h1 class="py-3  text-center aos-item" >  Sneak Peek</h1>
+    <div class="owl-carousel owl-theme" data-aos="zoom-out-up">
 
     <div class="item px-3">
       <div class="ph">
-        <img src="images/final.jpg" style=" ">
-        <div class="detail p-2 text-center">
-        <h5 class="m-0">  hello</h5>
-          <h6 class="m-0">i am there</h6>
+        <div class="detail p-2 text-center" data-aos="fade-right" data-aos-delay=200>
+        <h5 class="m-0"> Open mic sesssion</h5>
+          <h6 class="m-0">Rustik Mej Cafe Indore</h6>
         </div>
+        <img src="images/img1.jpeg" style=" ">
+
+      </img>
       </div>
     </div>
     <div class="item px-3">
       <div class="ph">
-        <img src="images/final.jpg" style=" ">
-        <div class="detail p-2 text-center">
-        <h5 class="m-0">  hello</h5>
-          <h6 class="m-0">i am there</h6>
+        <div class="detail p-2 text-center" data-aos="fade-right" data-aos-delay=200>
+        <h5 class="m-0"> event Decortion</h5>
+          <h6 class="m-0"> </h6>
         </div>
+        <img src="images/img3.jpeg" style=" ">
+
       </div>
     </div>
     <div class="item px-3">
       <div class="ph">
-        <img src="images/final.jpg" style=" ">
-        <div class="detail p-2 text-center">
-        <h5 class="m-0">  hello</h5>
-          <h6 class="m-0">i am there</h6>
+        <div class="detail p-2 text-center" data-aos="fade-right" data-aos-delay=200>
+        <h5 class="m-0"> Venue Decoration</h5>
+          <h6 class="m-0"></h6>
         </div>
+        <img src="images/img4.jpeg" style=" ">
+
       </div>
     </div>
     <div class="item px-3">
       <div class="ph">
-        <img src="images/final.jpg" style=" ">
-        <div class="detail p-2 text-center">
+        <div class="detail p-2 text-center" data-aos="fade-right" data-aos-delay=200>
         <h5 class="m-0">  hello</h5>
           <h6 class="m-0">i am there</h6>
         </div>
-      </div>
-    </div>
-    <div class="item px-3">
-      <div class="ph">
         <img src="images/final.jpg" style=" ">
-        <div class="detail p-2 text-center">
-        <h5 class="m-0">  hello</h5>
-          <h6 class="m-0">i am there</h6>
-        </div>
-      </div>
-    </div>
-    <div class="item px-3">
-      <div class="ph">
-        <img src="images/final.jpg" style=" ">
-        <div class="detail p-2 text-center">
-        <h5 class="m-0">  hello</h5>
-          <h6 class="m-0">i am there</h6>
-        </div>
-      </div>
-    </div>
-    <div class="item px-3">
-      <div class="ph">
-        <img src="images/final.jpg" style=" ">
-        <div class="detail p-2 text-center">
-        <h5 class="m-0">  hello</h5>
-          <h6 class="m-0">i am there</h6>
-        </div>
-      </div>
-    </div>
-    <div class="item px-3">
-      <div class="ph">
-        <img src="images/final.jpg" style=" ">
-        <div class="detail p-2 text-center">
-        <h5 class="m-0">  hello</h5>
-          <h6 class="m-0">i am there</h6>
-        </div>
-      </div>
-    </div>
-    <div class="item px-3">
-      <div class="ph">
-        <img src="images/final.jpg" style=" ">
-        <div class="detail p-2 text-center">
-        <h5 class="m-0">  hello</h5>
-          <h6 class="m-0">i am there</h6>
-        </div>
+
       </div>
     </div>
 
@@ -186,29 +232,29 @@
 <div class="w-100">
   <div class="wrapper">
     <div class="respcount">
-      <div class="counter  text-center col_fourth">
+      <div data-aos="fade-up"   class="counter  text-center col_fourth">
         <i class="fa fa-user fa-2x"></i>
-        <h2 class="timer count-title count-number"  id="white" data-to="241" data-speed="2000"></h2>
+        <h2 class="timer count-title count-number"  id="white" data-to="241" data-speed="2000">0</h2>
          <p class="count-text " id="white">Vendors</p>
       </div>
 
-      <div class="counter  text-center col_fourth">
+      <div data-aos="fade-down"  class="counter  text-center col_fourth">
         <i class="fa fa-gift fa-2x"></i>
-        <h2 class="timer count-title count-number"  id="white" data-to="17" data-speed="2000"></h2>
+        <h2 class="timer count-title count-number"  id="white" data-to="17" data-speed="2000">0</h2>
         <p class="count-text " id="white">Events Planned</p>
       </div>
       </div>
 
-    <div class="respcount">
+    <div class="respcount" data-aos="fade-up" >
       <div class="counter  text-center col_fourth">
         <i class="fa fa-envelope fa-2x"></i>
-        <h2 class="timer count-title count-number"  id="white" data-to="23" data-speed="2000"></h2>
+        <h2 class="timer count-title count-number"  id="white" data-to="23" data-speed="2000">0</h2>
         <p class="count-text " id="white">Projects</p>
       </div>
 
-      <div class="counter w-sm-50 text-center col_fourth end">
+      <div  data-aos="fade-down" class="counter w-sm-50 text-center col_fourth end">
         <i class="fa fa-globe fa-2x"></i>
-        <h2 class="timer count-title count-number" id="white" data-to="04" data-speed="2000"></h2>
+        <h2 class="timer count-title count-number" id="white" data-to="04" data-speed="2000">0</h2>
         <p class="count-text " id="white">Cities</p>
       </div>
       </div>
@@ -217,24 +263,26 @@
 
 
 
-  <div class="">
-      <div class="w-100 d-lg-flex d-md-flex d-sm-block">
+  <div class="about-us " >
 
-           <div class="text-left content w-lg-40 w-sm-100">
+
+
+      <div class="w-100 d-lg-flex d-md-flex d-sm-block ">
+        <div class="w-50">
+
+           <div class="text-left content " data-aos="fade-right" data-aos-offset=300>
              <h1 class="tophead" id="about">About us..</h1>
                <h3 class="tophead my-3" id="who">Who We Are ?</h3>
                <div class="text">
-                   Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                   tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                   quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                   consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                   cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                   proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                   From planning, organizing, conceptualizing your event to the ‘D’ Day execution along with coordination, #DRAWMYEVENT caters all needs with finest and accurate approach.<br>
+                    Its an initiation aiming at creating a nationwide portal over the web for events and minimizing the cost held by customers along with assisting them in drawing their event.
                </div>
            </div>
-         <div class="w-lg-50 imagepart w-sm-100"><img style=" width: 100%;
+
+         </div>
+         <div class="w-50 imagepart d-sm-block " data-aos="fade-left" data-aos-offset=300><img style=" width: 100%;
   vertical-align: middle;
-  border-style: none;"src="images/try4.jpg"></div>
+  border-style: none;"src="images/try2.jpg"></div>
 
       </div>
 
@@ -247,7 +295,8 @@
 </div>
 <section id="testim" class="testim">
 <!--         <div class="testim-cover"> -->
-            <div class="wrap">
+            <h1 class="text-center"  data-aos="zoom-in">Testimonials</h1>
+            <div class="wrap" data-aos="fade-up">
 
                 <span id="right-arrow" class="arrow right fa fa-chevron-right"></span>
                 <span id="left-arrow" class="arrow left fa fa-chevron-left "></span>
@@ -261,33 +310,33 @@
                 <div id="testim-content" class="cont">
 
                     <div class="active">
-                        <div class="img"><img src="https://image.ibb.co/hgy1M7/5a6f718346a28820008b4611_750_562.jpg" alt=""></div>
-                        <h2>Lorem P. Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <div class="img"><img src="images/sl1.jpeg" alt=""></div>
+                        <h2>Anuj Seetha(Personal Event)</h2>
+                        <p>#DRAWMYEVENT rocks and I have no words to express gratitude to the team. Such a fabulous service and thanks for making my special ones day supah special.</p>
                     </div>
 
                     <div>
-                        <div class="img"><img src="https://image.ibb.co/cNP817/pexels_photo_220453.jpg" alt=""></div>
-                        <h2>Mr. Lorem Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <div class="img"><img src="images/sl2.jpeg" alt=""></div>
+                        <h2>Pranjal Rajput (Seminar)</h2>
+                        <p>One of the best Event service in Indore. Such a brilliant management I have ever seen defining the professionalism into Events.</p>
                     </div>
 
                     <div>
-                        <div class="img"><img src="https://image.ibb.co/iN3qES/pexels_photo_324658.jpg" alt=""></div>
-                        <h2>Lorem Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <div class="img"><img src="images/sl3.jpeg" alt=""></div>
+                        <h2>Iqbal Khan (Owner - Rustik Mej Cafe Indore)</h2>
+                        <p>Kudos to the team. These guys are awesome. Thanks for making the most wonderful evening at my cafe with your Open Mic Session.</p>
                     </div>
 
                     <div>
-                        <div class="img"><img src="https://image.ibb.co/kL6AES/Top_SA_Nicky_Oppenheimer.jpg" alt=""></div>
-                        <h2>Lorem De Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <div class="img"><img src="images/sl2.jpeg" alt=""></div>
+                        <h2>Pranjal Rajput (Seminar)</h2>
+                        <p>One of the best Event service in Indore. Such a brilliant management I have ever seen defining the professionalism into Events.</p>
                     </div>
 
                     <div>
-                        <div class="img"><img src="https://image.ibb.co/gUPag7/image.jpg" alt=""></div>
-                        <h2>Ms. Lorem R. Ipsum</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+                        <div class="img"><img src="images/sl3.jpeg" alt=""></div>
+                        <h2>Iqbal Khan (Owner - Rustik Mej Cafe Indore)</h2>
+                        <p>Kudos to the team. These guys are awesome. Thanks for making the most wonderful evening at my cafe with your Open Mic Session.</p>
                     </div>
 
                 </div>
@@ -296,24 +345,24 @@
 <!--         </div> -->
     </section>
     <footer>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.513040267638!2d75.88079981496274!3d22.74633418509372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ0JzQ2LjgiTiA3NcKwNTInNTguOCJF!5e0!3m2!1sen!2sin!4v1546886310594"  allowfullscreen></iframe>
+      <iframe data-aos="fade-up" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.513040267638!2d75.88079981496274!3d22.74633418509372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjLCsDQ0JzQ2LjgiTiA3NcKwNTInNTguOCJF!5e0!3m2!1sen!2sin!4v1546886310594"  allowfullscreen></iframe>
 
 
       <div class="container ">
-      <div class="py-2 d-md-flex d-block justify-content-between">
-        <div class="footer-contact my-2 my-md-0 p-4">
-        <div class="mx-auto">	<i class="material-icons align-bottom">phone</i><span class="ml-1">  +91 9998889998</span>
+      <div class="py-2 d-md-flex d-block ty justify-content-between">
+        <div data-aos="fade-right"  class="footer-contact my-2 my-md-0 p-4">
+        <div class="mx-auto">	<i class="material-icons align-bottom">phone</i><span class="ml-1">  +91 7772921481</span>
         </div>
         </div>
-        <div class="footer-contact my-2  p-4 my-md-0 ">
+        <div data-aos="zoom-out" class="footer-contact my-2  p-4 my-md-0 ">
         <div class="mx-auto">
-          <i class="material-icons align-bottom">mail</i><span class="ml-3">  abcxyz@gmial.com</span>
+          <i class="material-icons align-bottom">mail</i><span class="ml-3">  drawmyevent@gmail.com</span>
         </div>
         </div>
 
-        <div class="footer-contact p-4 my-2 my-md-0">
+        <div data-aos="fade-left"   class="footer-contact p-4 my-2 my-md-0">
         <div class="mx-auto">
-          <i class="material-icons align-bottom">phone</i><span class="ml-1">  +91 9998889998</span>
+          <i class="material-icons align-bottom">phone</i><span class="ml-1">  +91 9691417882</span>
         </div>
 
         </div>
@@ -322,26 +371,25 @@
       <div class="d-md-flex d-block justify-content-between w-100 py-3">
 
         <div class="fcontent my-4 	my-sm-0 w-sm-100">
-          <span class="text-center "><i class="material-icons">favorite</i><strong class="f-min-head pb-1 ">More Links</strong></span>
+          <span class="text-center d-flex "><i class="material-icons">favorite</i><strong class="f-min-head pb-1 ">Our Blogs</strong></span>
           <div class="sitelinks">
-            <div class="mt-2 mt-sm-0"><li>LOREM ISPSDIM</li>
-            <li>LOREM ISPSDIM in LOREM ISPSDIM</li>
-            <li>LOREM ISPSDIM in LOREM ISPSDIM</li>
-            <li>LOREM ISPSDIM in LOREM ISPSDIM</li>
-            <li>LOREM ISPSDIM in LOREM ISPSDIM</li>
+            <div class="mt-2 mt-sm-0"><li><a href="http://buddingstartups.com/">Budding StartUps</a></li>
+            <!--<li>LOREM ISPSDIM in LOREM ISPSDIM</li>-->
+            <!--<li>LOREM ISPSDIM in LOREM ISPSDIM</li>-->
+            <!--<li>LOREM ISPSDIM in LOREM ISPSDIM</li>-->
         </div>
           </div>
         </div>
 
         <div class="fcontent my-4 my-sm-0  w-sm-100">
         <div class="sitelinks">
-          <i class="material-icons">link</i>
+          <span class="d-flex"><i class="material-icons">link</i>
           <strong class=f-min-head>SITE LINKS</strong>
-          <div class="mt-2 mt-sm-0"><li>LOREM ISPSDIM</li>
-          <li>LOREM ISPSDIM in LOREM ISPSDIM</li>
-          <li>LOREM ISPSDIM in LOREM ISPSDIM</li>
-          <li>LOREM ISPSDIM in LOREM ISPSDIM</li>
-          <li>LOREM ISPSDIM in LOREM ISPSDIM</li>
+        </span>
+          <div class="mt-2 mt-sm-0"><li>HOME</li>
+          <li>ABOUT US</li>
+          <li>CONTACT US</li>
+          <li>JOIN US</li>
 
 
       </div>
@@ -350,8 +398,9 @@
       <div class="fcontent my-4 my-sm-0 w-sm-100">
 
         <div class="sitelinks">
-          <i class="material-icons">share</i>
+        <span class="d-flex">  <i class="material-icons">share</i>
           <strong class=f-min-head>Join Us here</strong>
+          </span>
           <div class="social-icons my-3 mx-auto">
             <a class="social-icon social-icon--twitter">
               <i class="fa fa-twitter"></i>
@@ -383,16 +432,19 @@
           <div class="fcredits py-3">
 
           <div>
-              All Rights Reserved
+              &copy; 2019 All Rights Reserved
             </div>
             <p>Designed and developed by <a href="http://wizitsolutions.in">Wiz It Solutions</a></p>
           </div>
             </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="js/owl.carousel.min.js"></script>
       <script src="js/eventscript.js"></script>
 
+          <script src="js/aos.js" charset="utf-8"></script>
+        <script>
+        AOS.init();
+        </script>
 
 </body>
 </html>
