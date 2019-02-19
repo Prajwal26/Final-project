@@ -337,7 +337,7 @@
 
     <!-- Main JS-->
     <script src=js/angular.min.js ></script>
-    <script src="js/app.js" charset="utf-8"></script>
+    <script src="js/app1.js" charset="utf-8"></script>
     <script src="js/all.Service.js" charset="utf-8"></script>
     <script src="js/main.js"></script>
 
