@@ -167,21 +167,22 @@
                                 <i class="fas fa-tachometer-alt"></i>Dashboard</a>
                             
                         </li>
+                         <li class="">
+                            <a href="data_table.php">
+                                <i class="fas fa-table"></i>Quick Overview</a>
+                        </li>
                         <li>
                             <a href="persontable.php">
-                                <i class="fas fa-chart-bar"></i>Person Details</a>
+                                <i class="zmdi zmdi-account"></i>Person Details</a>
                         </li>
                         <li class="">
                             <a href="event.php">
-                                <i class="fas fa-table"></i>Event Details</a>
+                                <i class="zmdi zmdi-money-box"></i>Event Details</a>
                         </li>
-                        <li class="">
-                            <a href="data_table.php">
-                                <i class="fas fa-table"></i>Joint Table</a>
-                        </li>
+                       
                         <li class="">
                             <a href="newpanel.php">
-                                <i class="fas fa-table"></i>Analysis Table</a>
+                                <i class="zmdi zmdi-settings"></i>Settings</a>
                         </li>
                         <li class="">
                             <a href="#">
@@ -202,10 +203,7 @@
                     <div class="container-fluid">
                         <div class="header-wrap">
                             <form class="form-header" action="" method="POST">
-                                <input class="au-input au-input--xl" type="text" name="search" placeholder="Search for datas &amp; reports..." />
-                                <button class="au-btn--submit" type="submit">
-                                    <i class="zmdi zmdi-search"></i>
-                                </button>
+                               
                             </form>
                             <div class="header-button">
                                 <div class="account-wrap">
@@ -266,8 +264,8 @@
 
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="copyright">
-                                    <p>Copyright © 2018 Colorlib. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
+                                <div class="copyright mx-auto">
+                                    <p>Copyright © 2019 <a href="http://wizitsolutions.in/">Wiz It Solutions</a>. All rights reserved.</p>
                                 </div>
                             </div>
                         </div>
