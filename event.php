@@ -1,4 +1,16 @@
+<?php 
 
+    session_start();
+    if(array_key_exists("email",$_COOKIE)){
+        $_SESSION['email'] = $_COOKIE['email'];
+    }
+    if(array_key_exists("email",$_SESSION)){
+       
+    }
+    else{
+        header("location: login.php");
+    }
+?>
 <!DOCTYPE html>
 <html lang="en"  ng-app="myApp">
 
@@ -244,7 +256,7 @@
                                                 </div>
                                             </div>
                                             <div class="account-dropdown__footer">
-                                                <a href="#">
+                                                <a href="login.php?logout=1">
                                                     <i class="zmdi zmdi-power"></i>Logout</a>
                                             </div>
                                         </div>
