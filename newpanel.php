@@ -1,11 +1,11 @@
-<?php 
+<?php
 
     session_start();
     if(array_key_exists("email",$_COOKIE)){
         $_SESSION['email'] = $_COOKIE['email'];
     }
     if(array_key_exists("email",$_SESSION)){
-       
+
     }
     else{
         header("location: login.php");
@@ -222,10 +222,7 @@
                     <div class="container-fluid">
                         <div class="header-wrap">
                             <form class="form-header" action="" method="POST">
-                                <input class="au-input au-input--xl" type="text" name="search" placeholder="Search for datas &amp; reports..." />
-                                <button class="au-btn--submit" type="submit">
-                                    <i class="zmdi zmdi-search"></i>
-                                </button>
+
                             </form>
                             <div class="header-button">
                                 <div class="account-wrap">
@@ -303,7 +300,7 @@
 								<div class="input-group mb-3 mx-3 w-30">
 									<input id="target" type="text" class="form-control" ng-keyup="x.up(6,s1d)" ng-model=s1d aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 								</div>
-                               
+
 							</div>
 
                     		</div>
@@ -391,17 +388,15 @@
                     		</div>
 
                     	</div>
-                    	<div class="row my-3 w-70 mx-3">
-                    		<button type="button" class="btn btn-success btn-lg btn-block">Save Changes</button>
-                    	</div>
+
 
 
 
                         <div class="row">
                             <div class="col-md-12">
-                                <div class="copyright">
-                                    <p>Copyright © 2018 Colorlib. All rights reserved. Template by <a href="https://colorlib.com">Colorlib</a>.</p>
-                                </div>
+                              <div class="copyright mx-auto">
+                                  <p>Copyright © 2019 <a href="http://wizitsolutions.in/">Wiz It Solutions</a>. All rights reserved.</p>
+                              </div>
                             </div>
                         </div>
                     </div>
@@ -435,7 +430,7 @@
     </script>
 
     <!-- Main JS-->
-    
+
     <!-- <script src="js/all.Service.js" charset="utf-8"></script> -->
     <script src="js/main.js"></script>
 

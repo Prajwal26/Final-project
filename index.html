@@ -77,7 +77,7 @@
 
 
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body ng-app="appHome" data-spy="scroll" data-target=".navbar" data-offset="50"  ng-controller="home as asd">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -183,8 +183,8 @@ window.onscroll = function() {myFunction()};
     <div class="item px-3">
       <div class="ph">
         <div class="detail p-2 text-center" data-aos="fade-right" data-aos-delay=200>
-        <h5 class="m-0"> Open mic sesssion</h5>
-          <h6 class="m-0">Rustik Mej Cafe Indore</h6>
+        <h5 class="m-0"> {{asd.s1}}</h5>
+          <h6 class="m-0">{{asd.s1d}}</h6>
         </div>
         <img src="images/img1.jpeg" style=" ">
 
@@ -194,8 +194,8 @@ window.onscroll = function() {myFunction()};
     <div class="item px-3">
       <div class="ph">
         <div class="detail p-2 text-center" data-aos="fade-right" data-aos-delay=200>
-        <h5 class="m-0"> event Decortion</h5>
-          <h6 class="m-0"> </h6>
+        <h5 class="m-0"> {{asd.s2}}</h5>
+          <h6 class="m-0"> {{asd.s2d}}</h6>
         </div>
         <img src="images/img3.jpeg" style=" ">
 
@@ -204,8 +204,8 @@ window.onscroll = function() {myFunction()};
     <div class="item px-3">
       <div class="ph">
         <div class="detail p-2 text-center" data-aos="fade-right" data-aos-delay=200>
-        <h5 class="m-0"> Venue Decoration</h5>
-          <h6 class="m-0"></h6>
+        <h5 class="m-0"> {{asd.s3}}</h5>
+          <h6 class="m-0"> {{asd.s3d}} </h6>
         </div>
         <img src="images/img4.jpeg" style=" ">
 
@@ -214,8 +214,8 @@ window.onscroll = function() {myFunction()};
     <div class="item px-3">
       <div class="ph">
         <div class="detail p-2 text-center" data-aos="fade-right" data-aos-delay=200>
-        <h5 class="m-0">  hello</h5>
-          <h6 class="m-0">i am there</h6>
+        <h5 class="m-0">{{asd.s4}}</h5>
+          <h6 class="m-0">{{asd.s4d}}</h6>
         </div>
         <img src="images/final.jpg" style=" ">
 
@@ -234,13 +234,13 @@ window.onscroll = function() {myFunction()};
     <div class="respcount">
       <div data-aos="fade-up"   class="counter  text-center col_fourth">
         <i class="fa fa-user fa-2x"></i>
-        <h2 class="timer count-title count-number"  id="white" data-to="241" data-speed="2000">0</h2>
+        <h2 class="timer count-title count-number"  id="white" data-to={{asd.c1}} data-speed="2000">0</h2>
          <p class="count-text " id="white">Vendors</p>
       </div>
 
       <div data-aos="fade-down"  class="counter  text-center col_fourth">
         <i class="fa fa-gift fa-2x"></i>
-        <h2 class="timer count-title count-number"  id="white" data-to="17" data-speed="2000">0</h2>
+        <h2 class="timer count-title count-number"  id="white" data-to={{asd.c2}} data-speed="2000">0</h2>
         <p class="count-text " id="white">Events Planned</p>
       </div>
       </div>
@@ -248,13 +248,13 @@ window.onscroll = function() {myFunction()};
     <div class="respcount" data-aos="fade-up" >
       <div class="counter  text-center col_fourth">
         <i class="fa fa-envelope fa-2x"></i>
-        <h2 class="timer count-title count-number"  id="white" data-to="23" data-speed="2000">0</h2>
+        <h2 class="timer count-title count-number"  id="white" data-to={{asd.c3}} data-speed="2000">0</h2>
         <p class="count-text " id="white">Projects</p>
       </div>
 
       <div  data-aos="fade-down" class="counter w-sm-50 text-center col_fourth end">
         <i class="fa fa-globe fa-2x"></i>
-        <h2 class="timer count-title count-number" id="white" data-to="04" data-speed="2000">0</h2>
+        <h2 class="timer count-title count-number" id="white" data-to={{asd.c4}} data-speed="2000">0</h2>
         <p class="count-text " id="white">Cities</p>
       </div>
       </div>
@@ -264,7 +264,6 @@ window.onscroll = function() {myFunction()};
 
 
   <div class="about-us " >
-
 
 
       <div class="w-100 d-lg-flex d-md-flex d-sm-block ">
@@ -445,6 +444,7 @@ window.onscroll = function() {myFunction()};
         <script>
         AOS.init();
         </script>
-
+        <script src=js/angular.min.js ></script>
+        <script src=js/appHome.js ></script>
 </body>
 </html>
