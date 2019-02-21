@@ -180,7 +180,7 @@
 
                         </li>
                          <li class="data_table.php">
-                            <a href="data_table.html">
+                            <a href="data_table.php">
                                 <i class="fas fa-table"></i>Quick Overview</a>
                         </li>
                         <li>

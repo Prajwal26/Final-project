@@ -12,7 +12,7 @@
     }
 ?>
 <!DOCTYPE html>
-<html lang="en"  ng-app="myApp">
+<html lang="en"  ng-app="appHome">
 
 <head>
     <!-- Required meta tags-->
@@ -61,7 +61,7 @@
 </head>
 
 
-<body class="animsition">
+<body class="animsition" ng-controller="home as x">
     <div class="page-wrapper">
         <!-- HEADER MOBILE-->
         <header class="header-mobile d-block d-lg-none">
@@ -297,12 +297,13 @@
 								</div>
 
 								<div class="input-group mb-3 mx-3 w-30">
-									 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+									 <input id="target" type="text" ng-keyup="x.up(5,s1)" class="form-control" ng-model=s1  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 								</div>
 
 								<div class="input-group mb-3 mx-3 w-30">
-									<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+									<input id="target" type="text" class="form-control" ng-keyup="x.up(6,s1d)" ng-model=s1d aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 								</div>
+                               
 							</div>
 
                     		</div>
@@ -320,11 +321,11 @@
 								</div>
 
 								<div class="input-group mb-3 mx-3 w-30">
-									 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+									 <input id="target" type="text" class="form-control" ng-keyup="x.up(7,s2)" ng-model=s2 aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 								</div>
 
 								<div class="input-group mb-3 mx-3 w-30">
-									<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+									<input id="target" type="text" class="form-control" ng-keyup="x.up(8,s2d)" ng-model=s2d aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 								</div>
 							</div>
 
@@ -343,11 +344,11 @@
 								</div>
 
 								<div class="input-group mb-3 mx-3 w-30">
-									 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+									 <input id="target" type="text" class="form-control" ng-keyup="x.up(9,s3)" ng-model=s3 aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 								</div>
 
 								<div class="input-group mb-3 mx-3 w-30">
-									<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+									<input id="target" type="text" class="form-control"ng-keyup="x.up(10,s3d)" ng-model=s3d  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 								</div>
 							</div>
 
@@ -366,11 +367,11 @@
 								</div>
 
 								<div class="input-group mb-3 mx-3 w-30">
-									 <input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+									 <input id="target" type="text" class="form-control" ng-keyup="x.up(11,s4)" ng-model=s4  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 								</div>
 
 								<div class="input-group mb-3 mx-3 w-30">
-									<input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+									<input id="target" type="text" class="form-control" ng-keyup="x.up(12,s4d)" ng-model=s4d  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
 								</div>
 							</div>
 
@@ -381,12 +382,12 @@
 
                     	<div class="row">
                     		<div class="subrow d-flex w-100 my-3">
-                    			<div class="d-block mx-3 w-50"><span>Vendors:</span><input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></div>
-                    			<div class="d-block mx-3 w-50"><span>Projects:</span><input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></div>
+                    			<div class="d-block mx-3 w-50"><span>Vendors:</span><input ng-keyup="x.up(13,c1)" ng-model=c1  type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></div>
+                    			<div class="d-block mx-3 w-50"><span>Projects:</span><input ng-keyup="x.up(14,c2)" ng-model=c2 " type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></div>
                     		</div>
                     		<div class="subrow d-flex w-100 my-3">
-                    			<div class="d-block mx-3 w-50"><span class="\">Events Planned:</span><input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></div>
-                    			<div class="d-block mx-3 w-50"><span>Cities:</span><input type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></div>
+                    			<div class="d-block mx-3 w-50"><span class="\">Events Planned:</span><input type="text" ng-keyup="x.up(15,c3)" ng-model=c3 class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></div>
+                    			<div class="d-block mx-3 w-50"><span>Cities:</span><input type="text" class="form-control"  ng-keyup="x.up(16,c4)" ng-model=c4  aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default"></div>
                     		</div>
 
                     	</div>
@@ -409,6 +410,8 @@
         </div>
 
     </div>
+    <script src=js/angular.min.js ></script>
+    <script src="js/backend.js" charset="utf-8"></script>
 
     <!-- Jquery JS-->
     <script src="vendor/jquery-3.2.1.min.js"></script>
@@ -432,9 +435,8 @@
     </script>
 
     <!-- Main JS-->
-    <script src=js/angular.min.js ></script>
-    <script src="js/app.js" charset="utf-8"></script>
-    <script src="js/all.Service.js" charset="utf-8"></script>
+    
+    <!-- <script src="js/all.Service.js" charset="utf-8"></script> -->
     <script src="js/main.js"></script>
 
 </body>
